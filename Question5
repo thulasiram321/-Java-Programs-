@@ -1,0 +1,21 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public  class A{
+public static void main(String[] args) {
+ Scanner sc = new Scanner(System.in);
+ System.out.print("Enter a number of String: ");
+int n = sc.nextInt();
+for (int i = 1; i <=n; i++){
+ System.out.print("Enter a String: "+i);
+String str=sc.next();
+char[] c = str.tocharArray();
+Arrays.sort(c);
+String result="";
+for (int j = str.length-1; j>0; j--){
+result+=c[j];
+}
+ System.out.print("output of String: "+result);
+result="";
+}
+}
+}
