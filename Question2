@@ -1,0 +1,25 @@
+public class B{
+public static boolean jumb(int n){
+while (n != 0)  {
+int f = n % 10;
+int g = (n/ 10) % 10;
+if (Math.abs(g - f) != 1){
+return false;
+}
+n = n / 10;
+}
+return true;
+}
+public static void main(String[] args){
+Scanner sc = new Scanner(System.in);
+int n = sc.nextInt();
+if(jumb(n)){
+System.out.println("given number is jumbled");
+}
+else{
+System.out.println("given number is not a jumbled ");
+}
+}
+}
+
+
